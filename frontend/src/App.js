@@ -5,6 +5,8 @@ import BoardPage from "./components/BoardPage";
 function App() {
   const [selectedBoardId, setSelectedBoardId] = useState(null);
 
+  console.log("Selected Board ID:", selectedBoardId); 
+
   return (
     <div style={{ display: "flex" }}>
       <Sidebar onSelectBoard={setSelectedBoardId} />
@@ -19,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;
